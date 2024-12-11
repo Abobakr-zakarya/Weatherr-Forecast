@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter city name" id="city-input">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <div class="weather-body">
+            <div class="location-details">
+                <div class="city" id="city">City Name</div>
+                <div class="date" id="date">Date</div>
+            </div>
+
+            <div class="weather-details">
+                <div class="temp" id="temp">0°C</div>
+                <div class="weather" id="weather">Weather Forecast</div>
+                <div class="temp-range">Min: <span id="min-temp">0°C</span> Max: <span id="max-temp">0°C</span></div>
+            </div>
+
+            <div class="forecast" id="forecast">
+                <!-- Forecast cards will be inserted here -->
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
